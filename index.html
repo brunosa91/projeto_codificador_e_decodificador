@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_css.css">
     <title>Formulário de codificação</title>
 </head>
 <body>
+    <main class="corpo">
+    <Section class="formulario">
+        <form action="">
+            <fieldset class="box">
+
+                <H1>CODIFIQUE CABRON</H1>
+
+                <div class="escreva">  
+                    <input type="text">  
+                    <label for="escreva">Escreva um texto</label>
+                    
+                </div>
+
+                <div class="tipo_cripto">
+                    <select name="select" id="tipo_cripto">
+                        <option value="base64">Base-64</option>
+                        <option value="cifra_de_cesar">Cifra de César</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="radio" class="codificar">
+                    <label for="codificar">Codificar</label>
+                </div>
+
+                <div>
+                    <input type="radio" class="decodificar">
+                    <label for="decodificar">Decodificar</label>  
+                </div>
+
+                <div>
+                    <input type="number" class="chave">
+                    <label for="chave">Chave de criptografia</label>
+                   
+                </div>
+
+                <div>
+                    <input type="text" class="resultado">
+                    <label for="resultado">Resultado</label>
+                    
+                </div>
+                
+            </fieldset>
+        </form>
+    </Section>
+    </main>
+    <footer class="rodape"></footer>
     
 </body>
 </html>
