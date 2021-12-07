@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 430px;
   width: 40%;
   border-radius: 15px;
   background-color: #012326;
@@ -62,6 +62,7 @@ fieldset{
 
 .escreva input {
   width: 100%;
+  padding: 5px;
  }
  
 .caixaCripto {
@@ -88,8 +89,25 @@ fieldset{
   width: 100%;
 }
 
+.divResultado{
+  margin-top: 10px 0;
+
+}
+
 .resultado {
-margin: 10px 0;
+padding: 5px;
+
+}
+
+.button{
+  margin-top: 15px;
+  width: 40%;
+  border-radius: 10px;
+  background-color: #11698C;
+  color: #cfcfcf;
+  cursor: pointer;
+  height: 30px;
+  
 }
 
 .rodape {
