@@ -74,3 +74,21 @@ function decodifica(texto,chave){
 
   }).join('')
 }
+
+
+radio[0].addEventListener('click', function (){
+  if(radio[0].checked){
+    botao.innerText='CODIFICAR'
+  }  
+
+
+})
+
+radio[1].addEventListener('click', function (){
+  if(radio[1].checked){
+    botao.innerText='DECODIFICAR'
+  }  
+
+
+})
+
