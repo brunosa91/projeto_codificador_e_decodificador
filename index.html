@@ -5,50 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style_css.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=B612+Mono&display=swap" rel="stylesheet">
+
     <title>Formulário de codificação</title>
   </head>
+
   <body>
     <main class="corpo">
-      <section class="formulario">
-        <form action="">
-          <fieldset class="box">
+        <form >
             <h1>CODIFIQUE CABRON</h1>
 
-            <div class="escreva">
+            <fieldset class="escreva">
+              <label for="text">Escreva um texto</label>
               <input type="text" id="text" />
-              <label for="escreva">Escreva um texto</label>
-            </div>
-
-            <div class="tipo_cripto">
-              <select name="select" id="tipo_cripto">
+            </fieldset>
+            
+            <fieldset class="caixaCripto">
+              <select name="select" id="tipo_cripto" >
                 <option value="base64">Base-64</option>
                 <option value="cifra_de_cesar">Cifra de César</option>
               </select>
-            </div>
+            </fieldset>
 
-            <div>
-              <input type="radio" name="rad" class="radio" />
-              <label for="rad">Codificar</label>
-            </div>
+            <fieldset>
+              <div class="divAjuste">
+                <input type="radio" name="rad" class="radio" />
+                <label for="radio">Codificar</label>
+              </div>
+              <div class="divAjuste">
+                <input type="radio" name="rad" class="radio" />
+                <label for="radio">Decodificar</label>
+              </div>
+            </fieldset>
 
-            <div>
-              <input type="radio" name="rad" class="radio" />
-              <label for="rad">Decodificar</label>
-            </div>
+             <fieldset class="caixaChave">   <!--trocar no js -->
 
-            <div class="chave">
-              <input type="number"  id="chave" />
               <label for="chave">Chave de criptografia</label>
-            </div>
+              <input type="number"  id="chave" />
+              
+            </fieldset>
 
-            <div>
-              <input type="text" class="resultado" />
+            <fieldset>
               <label for="resultado">Resultado</label>
-              <button class="button" onclick="">CLIQUE</button>
-            </div>
-          </fieldset>
+              <input type="text" class="resultado" />
+             
+            </fieldset>
+            <button class="button">CLIQUE</button>
+
         </form>
-      </section>
     </main>
     <footer class="rodape"></footer>
 

@@ -5,70 +5,95 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh; 
   width: 100%;
-  background-image: url("imagens/codigo.gif");
+  background-image: url("imagens/background.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
 .corpo {
-  width: 100%;
-  height: 90%;
-}
-
-.box {
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: 100px auto;
+  justify-content: center;
+  align-items: center;
   height: 400px;
-  width: 30%;
+  width: 40%;
   border-radius: 15px;
-  background-color: black;
+  background-color: #012326;
+  color: #cfcfcf;
+  font-size: 18px;
+  margin-top: 50px;
+  font-family: 'B612 Mono', monospace;
+  
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
 }
 
-.box h1 {
+.corpo h1 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: red;
+  color: #11698C;
+  padding-bottom: 10px;
+  font-size: 35px;
+  font-family: 'B612 Mono', monospace;
 }
 
-.box div {
-  color: blanchedalmond;
+form label,input{
+  display: block;
 }
 
-.escreva {
-  margin-top: 30px;
-  margin-left: 50px;
-  color: blanchedalmond;
+fieldset{
+  border: none;
 }
 
-.tipo_cripto {
-  margin-top: 10px;
-  margin-left: 50px;
+.escreva label {
+ margin: 10px 0;
 }
 
-.codificar {
-  margin-top: 10px;
-  margin-left: 20%;
+.escreva input {
+  width: 100%;
+ }
+ 
+.caixaCripto {
+  margin: 10px 0;
 }
 
-.decodificar {
-  margin-top: 10px;
-  margin-left: 20%;
+.divAjuste{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.radio {
+  margin: 10px 0;
 }
 
-.chave {
-  margin-top: 10px;
-  margin-left: 50px;
+
+.caixaChave {
+  margin: 10px 0;
+  display: none;
+}
+
+#chave{
+  width: 100%;
 }
 
 .resultado {
-  margin-top: 10px;
-  margin-left: 50px;
-  margin-bottom: 50px;
+margin: 10px 0;
 }
 
 .rodape {
   width: 100%;
-  height: 90%;
+  height: 20px;
+  background-color: #012326;
 }
