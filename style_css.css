@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 100vh; 
+  height: 100vh;
   width: 100%;
   background-image: url("imagens/background.jpeg");
   background-size: cover;
@@ -27,91 +27,97 @@ body {
   color: #cfcfcf;
   font-size: 18px;
   margin-top: 50px;
-  font-family: 'B612 Mono', monospace;
-  
+  font-family: "B612 Mono", monospace;
 }
-form{
+form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-
 }
 
 .corpo h1 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #11698C;
+  color: #11698c;
   padding-bottom: 10px;
   font-size: 35px;
-  font-family: 'B612 Mono', monospace;
+  font-family: "B612 Mono", monospace;
 }
 
-form label,input{
+form label,
+input {
   display: block;
 }
 
-fieldset{
+fieldset {
   border: none;
 }
 
 .escreva label {
- margin: 10px 0;
+  margin: 10px 0;
 }
 
 .escreva input {
   width: 100%;
   padding: 5px;
- }
- 
+}
+
 .caixaCripto {
   margin: 10px 0;
 }
 
-.divAjuste{
-  display:flex;
+.divAjuste {
+  display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .radio {
   margin: 10px 0;
 }
-
 
 .caixaChave {
   margin: 10px 0;
   display: none;
 }
 
-#chave{
+#chave {
   width: 100%;
 }
 
-.divResultado{
+.divResultado {
   margin-top: 10px 0;
-
 }
 
 .resultado {
-padding: 5px;
-
+  padding: 5px;
 }
 
-.button{
+.button {
   margin-top: 15px;
   width: 40%;
   border-radius: 10px;
-  background-color: #11698C;
+  background-color: #11698c;
   color: #cfcfcf;
   cursor: pointer;
   height: 30px;
-  
 }
 
 .rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 20px;
+  height: 25px;
   background-color: #012326;
+  color: #11698c;
+  font-size: 12px;
+  font-family: "B612 Mono", monospace;
 }
+
+/*@media screen (max-width: 700px){
+
+  .corpo
+  
+}/*
