@@ -20,10 +20,9 @@ botao.addEventListener("click", function (event) {
   event.preventDefault();
   var selection = document.querySelector("#tipo_cripto").value;
   if (radio[0].checked && selection == "cifra_de_cesar") {
-    // radio de codificar
     var valorTexto = text.value.split("");
-    var valorChave = parseInt(chave.value); // parseint para js receber como número
-    resultado.value = codifica(valorTexto /*texto*/, valorChave /*chave*/);
+    var valorChave = parseInt(chave.value);
+    resultado.value = codifica(valorTexto, valorChave);
   } else if (radio[1].checked && selection == "cifra_de_cesar") {
     var valorTexto = text.value.split("");
     var valorChave = parseInt(chave.value);
@@ -41,7 +40,7 @@ function codifica(texto, chave) {
   // bruno,2
   return texto
     .map((teste) => {
-      //return texto.map(map é um for que rodas todos itens do  array executando uma função) == ['b','r','u','n','o']
+      //return texto.map(map é um for que rodas todos itens do  array executando uma função) == ARRAY QUE VEIO DO SPLIT ['b','r','u','n','o']
       //parâmetro teste é a variável que vai testar cada item do array no algoritmo
 
       var cripto = teste.charCodeAt(); // 'b','r','u','n','o'  bruno.charCodeAt(0) asc ii 66
@@ -55,26 +54,20 @@ function codifica(texto, chave) {
         return teste;
       }
     })
-    .join(""); // o join vai junta o nosso novo array tranformando em string dnv bruno
+    .join(""); // o join vai junta o nosso  array tranformando em string dnv EX:bruno
 }
-
 function decodifica(texto, chave) {
   return texto
     .map((teste) => {
       var cripto = teste.charCodeAt();
-
       if (cripto >= 65 && cripto <= 90) {
-        if (cripto - 65 - chave < 0) {
-          return String.fromCharCode(((cripto - 65 - chave + 26) % 26) + 65);
-        } else {
-          String.fromCharCode(((cripto - 65 - chave) % 26) + 65);
-        }
+        return cripto - 65 - chave < 0
+          ? String.fromCharCode(((cripto - 65 - chave + 26) % 26) + 65)
+          : String.fromCharCode(((cripto - 65 - chave) % 26) + 65);
       } else if (cripto >= 97 && cripto <= 122) {
-        if (cripto - 97 - chave < 0) {
-          return String.fromCharCode(((cripto - 97 - chave + 26) % 26) + 97);
-        } else {
-          String.fromCharCode(((cripto - 97 - chave) % 26) + 97);
-        }
+        return cripto - 97 - chave < 0
+          ? String.fromCharCode(((cripto - 97 - chave + 26) % 26) + 97)
+          : String.fromCharCode(((cripto - 97 - chave) % 26) + 97);
       } else {
         return teste;
       }

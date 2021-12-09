@@ -114,4 +114,12 @@ fieldset {
   color: #11698c;
   font-size: 12px;
   font-family: "B612 Mono", monospace;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .corpo {
+    width: 100%;
+    height: 100%;
+  }
 }
